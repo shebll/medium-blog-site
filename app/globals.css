@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* header */
+.btn{
+  cursor: pointer;
+  padding: 7px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #46c565;
+  border-radius: 96px;
+  transition: all 0.4s ;
+  -webkit-transition: all 0.4s ;
+  -moz-transition: all 0.4s ;
+  -ms-transition: all 0.4s ;
+  -o-transition: all 0.4s ;
+}
+@media (max-width:797px) {
+  .btn{
+    padding: 3px 8px;
+    font-size: 14px;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button.prim{
+  color: white;
+  background-color:  #46c565;
 }
+button:hover{
+  color: white;
+  background-color:  #46c565;
+}
+/* header */
+/* Hero */
+/* Hero  */
