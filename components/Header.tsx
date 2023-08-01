@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
-function Header() {
+import DropDown from './dropDown'
+function Header() {  
   return (
     <div className='bg-white py-4 border-b-neutral-950 border-b-[2px]'>
-      <header className='container flex justify-between items-center mx-auto px-2'>
+      <header className='container flex justify-between items-center mx-auto px-2 gap-4'>
         <div className='flex gap-4 justify-center items-center '>
           <Link href="/">
             <Image
@@ -17,13 +17,14 @@ function Header() {
               >            
             </Image>
           </Link>
-          <nav className='hidden md:block'>
+          <nav className='hidden md:inline-flex'>
             <ul className='flex gap-2 items-center'> 
               <li className=' font-semibold text-lg hover:text-black text-gray-700'><Link href="/about" >About</Link></li>
               <li className=' font-semibold text-lg hover:text-black text-gray-700'><Link href="/contact" >Contact</Link></li>
               <li className=' font-semibold text-lg hover:text-black text-gray-700 btn'><Link href="/follow" >Follow</Link></li>
             </ul>
           </nav>
+          <DropDown  ></DropDown>
         </div>
         <div className=' flex gap-2'>
           <button className='btn sec'>Sign In</button>

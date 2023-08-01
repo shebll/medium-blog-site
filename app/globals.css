@@ -31,6 +31,62 @@ button:hover{
   color: white;
   background-color:  #46c565;
 }
+
+.icon{
+  border-width: 15px;
+  position: relative;
+  cursor: pointer;
+  border-color: rgb(49, 80, 255) transparent transparent transparent;
+  border-radius: 3px;
+  bottom: -7.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.menu{
+  transition:  0.5s;
+  -webkit-transition:  0.5s;
+  -moz-transition:  0.5s;
+  -ms-transition:  0.5s;
+  -o-transition:  0.5s;
+  box-shadow: 1 1 1 inset;
+  top: -280px;
+  left: 0px;
+  position: absolute;
+  width: 100vw;
+  background-color: antiquewhite;
+  box-shadow: 0px 14px 11px 0px #00000054;
+}
+.menu.active{
+  top: 80px;  
+}
+.target{
+  transition:  all 0ms cubic-bezier(.645, .045, .355, 1);
+  -webkit-transition:  all 0ms cubic-bezier(.645, .045, .355, 1);
+  -moz-transition:  all 0ms cubic-bezier(.645, .045, .355, 1);
+  -ms-transition:  all 0ms cubic-bezier(.645, .045, .355, 1);
+  -o-transition:  all 0ms cubic-bezier(.645, .045, .355, 1);
+  border-radius: 50%;
+  background-color: rgb(74, 74, 255);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 40px;
+  height:  40px;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  display: flex;
+
+}
+.target.active{
+  opacity: 1;
+}
 /* header */
 /* Hero */
 /* Hero  */
