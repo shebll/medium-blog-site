@@ -8,6 +8,12 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Title',
+      description:'keep the title short',
+      type: 'string',
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
       type: 'string',
     }),
     defineField({
@@ -47,7 +53,8 @@ export default defineType({
     defineField({
       name: 'body',
       title: 'Body',
-      type: 'blockContent',
+      type :"array",
+      of:[{type:"block"}],
     }),
   ],
 

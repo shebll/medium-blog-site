@@ -88,5 +88,78 @@ button:hover{
   opacity: 1;
 }
 /* header */
+/* curser */
+.curser{
+  background-color: rgb(243, 255, 79);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* curser */
 /* Hero */
 /* Hero  */
+
+/* card */
+.card{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #cecece81;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+.image{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.card:hover .image{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.info {
+  background-color: #e6e6e6;
+  z-index: 100;
+}
+/* card */
+.popup{
+  position: relative;
+  bottom:100% ;
+  left: 15%;
+  z-index: 100;
+  transition: 0.5s;
+  transform: scale(0);
+  background-color: rgb(238, 230, 211);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.popup.active{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
