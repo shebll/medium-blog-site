@@ -81,11 +81,11 @@ function Post({post} :props) {
         </div>
         <input type="submit" value="submit" className='cursor-pointer bg-yellow-400 p-4 rounded-lg font-semibold text-lg text-gray-600 uppercase' />
       </form>
-      <div className="shadow-lg rounded-lg m-4 p-8 z-0 h-[180px]">
+      <div className="shadow-lg rounded-lg m-4 p-8 z-0 h-[210px]">
         <h1 className='font-bold uppercase text-4xl text-orange-500 py-3'>Comments</h1>
         <hr className='bg-gray-500 h-[1.7px]' />
         {post.comments.map(comment =>(
-            <div  key={comment._id} className='flex gap-4 py-4'>
+            <div  key={comment._id} className='flex gap-4 py-2'>
               <h1 className='font-semibold text-lg text-slate-800'>{comment.name} :</h1>
               <p className='text-gray-500'>{comment.comment}</p> 
             </div>
