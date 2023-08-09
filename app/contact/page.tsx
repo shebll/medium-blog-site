@@ -1,10 +1,10 @@
 "use client"
 import { useEffect, useState } from "react"
-import {motion} from "framer-motion"
+import {MotionProps, Variants, motion} from "framer-motion"
 function Contact() {
   const [mousePointer, setMousePointer] = useState({x:0,y:0})
   const [style, setStyle] =useState("default")
-  const variants = {
+  const variants :Variants = {
     default:{
       x: mousePointer.x -20,
       y:mousePointer.y-20
