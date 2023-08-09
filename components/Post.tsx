@@ -18,7 +18,7 @@ interface inputForm {
 function Post({post} :props) {
   // console.log(post.comments)
 
-  const popupRef =useRef(null)
+  const popupRef =useRef<HTMLDivElement>(null)
   const {register,handleSubmit,formState:{errors}}=useForm<inputForm>()
 
 
@@ -31,7 +31,11 @@ function Post({post} :props) {
     }).catch((err)=>{
       console.log(err)
     })
-    await (popupRef.current.classList.toggle("active"))
+    if(popupRef.current) {
+      // will be type HTMLDivElement NOT HTMLDivElement | null
+      const popupRefDOM = popupRef.current; 
+      (popupRefDOM.classList.toggle("active"))
+    }
   }
   return (
     <div className="max-w-[800px] mx-auto py-[60px]">
@@ -89,7 +93,13 @@ function Post({post} :props) {
         <div ref={popupRef} className="popup shadow-lg rounded-lg p-8 flex flex-col text-center gap-6 items-center justify-center w-[500px]">
           <h1 className='text-slate-800 text-3xl font-bold'>Thank You !</h1>
           <p className='text-gray-500 mb-4 max-w-[90%]'>Your Comment Will Be Shown When The Blogger Approve It Thanks!</p>
-          <button onClick={()=> popupRef.current.classList.toggle("active")} 
+          <button onClick={()=> {
+            if(popupRef.current) {
+              // will be type HTMLDivElement NOT HTMLDivElement | null
+              const popupRefDOM = popupRef.current; 
+              (popupRefDOM.classList.toggle("active"))
+            }
+          }} 
             className='cursor-pointer bg-yellow-400 p-4 rounded-lg font-semibold text-lg text-white  hover:bg-yellow-500 transition-all hover:shadow-2xl w-full'>OK</button>
         </div>
       </div>
