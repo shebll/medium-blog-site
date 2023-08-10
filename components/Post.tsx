@@ -4,7 +4,7 @@ import { Post } from '@/types/post';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import {useForm , SubmitHandler} from "react-hook-form"
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 type props ={
   post:Post ;
@@ -17,10 +17,17 @@ interface inputForm {
 }
 function Post({post} :props) {
   // console.log(post.comments)
-
+  const lenghtOfCommentsSection= (post.comments.length * 44)+120
   const popupRef =useRef<HTMLDivElement>(null)
+  const commentsSectionRef =useRef<HTMLDivElement>(null)
   const {register,handleSubmit,formState:{errors}}=useForm<inputForm>()
-
+  
+  useEffect(()=>{ 
+    if(commentsSectionRef.current){
+      commentsSectionRef.current.style.height=`${lenghtOfCommentsSection}px`}
+      // console.log(lenghtOfCommentsSection)
+    }
+    ,[lenghtOfCommentsSection])
 
   const onSubmit:SubmitHandler<inputForm> = async(data)=>{
     await fetch("/api/createComment",{
@@ -81,7 +88,7 @@ function Post({post} :props) {
         </div>
         <input type="submit" value="submit" className='cursor-pointer bg-yellow-400 p-4 rounded-lg font-semibold text-lg text-gray-600 uppercase' />
       </form>
-      <div className="shadow-lg rounded-lg m-4 p-8 z-0 h-[210px]">
+      <div ref={commentsSectionRef} className={`shadow-lg rounded-lg m-4 p-8 z-0`}>
         <h1 className='font-bold uppercase text-4xl text-orange-500 py-3'>Comments</h1>
         <hr className='bg-gray-500 h-[1.7px]' />
         {post.comments.map(comment =>(
