@@ -4,7 +4,18 @@
 https://medium-blog-site.vercel.app/
 
 ## some screenshots
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium1.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium2.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium3.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium3.png)
 
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium1.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium2.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium3.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium4.png)
+
+
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/adminMedium.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
