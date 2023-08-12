@@ -22,7 +22,7 @@ async function getPosts() : Promise<Post[]> {
       },
       body,
       description
-    }`)
+    }`,{caches:"no-cache"})
 }
 
 async function getPost(slug :string) : Promise<Post> {
@@ -50,7 +50,11 @@ async function getPost(slug :string) : Promise<Post> {
       body,
       description
     }`,
-    { slug }
+    {
+      caches:"no-cache",
+      slug,
+      // headers: {slug :slug},
+    }
   );
 }
 export {getPosts ,getPost} 
