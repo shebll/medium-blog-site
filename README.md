@@ -1,7 +1,7 @@
 
 
 ## Dimo
-https://medium-blog-site.vercel.app/
+https://medium-blog-site-ebtq.vercel.app/
 
 ## some screenshots
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium1.png)
