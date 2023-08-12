@@ -7,7 +7,7 @@ https://medium-blog-site.vercel.app/
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium1.png)
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium2.png)
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium3.png)
-![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium3.png)
+![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/medium4.png)
 
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium1.png)
 ![alt text](https://github.com/shebll/medium-blog-site/blob/master/public/mobMedium2.png)
